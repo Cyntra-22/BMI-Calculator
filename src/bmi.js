@@ -7,6 +7,12 @@ function calculateBMI() {
   const weight = weightInput.value;
   const height = heightInput.value;
 
+  if (weight === "" || height === "") {
+    resultElement.innerHTML = "No Result";
+    descriptionElement.innerHTML = "";
+    return; // Exit the function
+  }
+
   const result = weight / (height * 0.01 * (height * 0.01));
   if (result < 18.5) {
     descriptionElement.innerHTML = "You are Underweight";
