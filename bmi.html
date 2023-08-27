@@ -2,52 +2,47 @@
 <html>
   <head>
     <title>BMI Calculator</title>
+
+    <script src="src/bmi.js"></script>
+    <link rel="stylesheet" href="src/index.css" />
   </head>
-  <style>
-    table,
-    th,
-    td {
-      border: 1px solid black;
-    }
-    #description {
-      font-weight: bold;
-    }
-  </style>
-  <script src="src/bmi.js"></script>
   <body>
-    <h1>BMI Calculator</h1>
+    <div class="container">
+      <h1>BMI Calculator</h1>
 
-    <label for="weight">Weight:</label><input type="text" id="weight" /> <br /><br />
-    <label for="height">Height:</label><input type="text" id="height" /><br />
-    <br />
-    <button onclick="calculateBMI()" id="calculateBMI">Calculate</button>
+      <label for="weight">Weight:</label><input type="text" id="weight" />
+      <br /><br />
+      <label for="height">Height:</label><input type="text" id="height" /><br />
+      <br />
+      <button onclick="calculateBMI()" id="calculateBMI">Calculate</button>
 
-    <h2>BMI Result</h2>
-    <p id="bmiResult">No Result</p>
-    <p id="description"></p>
+      <h2>BMI Result</h2>
+      <p id="bmiResult">No Result</p>
+      <p id="description"></p>
 
-    <h2>BMI Reference</h2>
-    <table>
-      <tr>
-        <th>BMI</th>
-        <th>Classification</th>
-      </tr>
-      <tr>
-        <td>Less Than 18.5</td>
-        <td>UnderWeight</td>
-      </tr>
-      <tr>
-        <td>18.5 - 24.9</td>
-        <td>Normal Weight</td>
-      </tr>
-      <tr>
-        <td>25.0 - 29.9</td>
-        <td>OverWeight</td>
-      </tr>
-      <tr>
-        <td>30.0 or more</td>
-        <td>Obese</td>
-      </tr>
-    </table>
+      <h2>BMI Reference</h2>
+      <table>
+        <tr>
+          <th>BMI</th>
+          <th>Classification</th>
+        </tr>
+        <tr>
+          <td>Less Than 18.5</td>
+          <td>UnderWeight</td>
+        </tr>
+        <tr>
+          <td>18.5 - 24.9</td>
+          <td>Normal Weight</td>
+        </tr>
+        <tr>
+          <td>25.0 - 29.9</td>
+          <td>OverWeight</td>
+        </tr>
+        <tr>
+          <td>30.0 or more</td>
+          <td>Obese</td>
+        </tr>
+      </table>
+    </div>
   </body>
 </html>

@@ -1,0 +1,17 @@
+body {
+  background-color: aqua;
+}
+
+.container, table{
+  margin: 0 auto;
+  text-align: center;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+#description {
+  font-weight: bold;
+}
